@@ -1,0 +1,25 @@
+<html>
+<head>
+  <base href="/">
+  <title>Conversation Chat App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div>
+
+      <div class="chat-column">
+        <div id="scrollingChat"></div>
+        <label for="textInput" class="inputOutline">
+          <input id="textInput" class="input responsive-column"
+            placeholder="Type something" type="text"
+            onkeydown="ConversationPanel.inputKeyDown(event, this)">
+        </label>
+      </div>
+  <script src="js/common.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/conversation.js"></script>
+  <script src="js/global.js"></script>
+</body>
+</html>
